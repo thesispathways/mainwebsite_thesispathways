@@ -373,13 +373,13 @@ footer {
     .hero-overlay {
         width: 100%;
         padding: 30px 20px;
-        text-align: center;
+        text-align: left; /* keep hero text left */
     }
     .hero-overlay .hero-text h1 {
         font-size: 2rem;
     }
     .hero-overlay .hero-text button {
-        margin: 20px auto 0;
+        margin: 20px 0 0;
     }
     .hero-image img {
         height: 300px;
@@ -387,31 +387,31 @@ footer {
     }
 }
 
-/* ------------------ Mobile Navigation & Layout Fixes ------------------ */
+/* ------------------ Mobile Fixes ------------------ */
 @media (max-width: 768px) {
 
-    /* Header / Navigation */
+    /* Header / Navigation - keep links on same line */
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 15px 20px;
     }
 
     .nav-links {
-        margin-top: 10px;
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
+        gap: 15px;
+        margin: 0;
     }
 
     .nav-links a {
-        margin: 8px 0;
+        margin: 0;
         font-size: 1rem;
-        width: 100%;           /* make links full width */
-        text-align: center;    /* center text */
+        text-align: left;
     }
 
-    /* Features stacked */
+    /* Features stacked vertically */
     .features {
         flex-direction: column;
         gap: 20px;
@@ -419,7 +419,7 @@ footer {
     }
 
     .feature-box {
-        width: 100%;           /* full width boxes */
+        width: 100%;
         padding: 20px;
     }
 
@@ -431,7 +431,7 @@ footer {
 
     /* Topics Section */
     .topics-grid {
-        flex-direction: column; /* stack topic boxes */
+        flex-direction: column;
         gap: 15px;
     }
 
@@ -470,7 +470,7 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* Hero Section */
+    /* Hero Section - keep text left */
     .hero-bar {
         flex-direction: column;
         height: auto;
@@ -478,8 +478,14 @@ footer {
 
     .hero-overlay {
         width: 100%;
-        padding: 30px 20px;
-        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+        background: linear-gradient(to right, rgba(31, 58, 95, 0.85), rgba(31, 58, 95, 0));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
     }
 
     .hero-overlay .hero-text h1 {
@@ -487,6 +493,7 @@ footer {
     }
 
     .hero-image img {
+        width: 100%;
         height: 300px;
         object-fit: cover;
     }
