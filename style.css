@@ -1,0 +1,386 @@
+/* ------------------ Color Palette ------------------ */
+:root {
+    --primary-navy: #1F3A5F;
+    --secondary-teal: #2FA4A9;
+    --accent-orange: #F4A261;
+    --bg-offwhite: #F7F9FC;
+    --bg-lightgray: #EEF2F6;
+    --text-dark: #333333;
+    --text-gray: #777777;
+}
+
+/* ------------------ Global Styles ------------------ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-offwhite);
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+/* ------------------ Container ------------------ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------------------ Top Navigation ------------------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+/* ------------------ Logo / Company Title ------------------ */
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+}
+
+/* Oversized initials for T and P */
+.logo h1 .logo-initial {
+    font-size: 4rem;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+/* Accent line under the logo */
+.logo h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-orange);
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+/* ------------------ Divider Line ------------------ */
+.divider {
+    height: 1px;
+    background-color: var(--bg-lightgray);
+    margin: 0;
+}
+
+/* ------------------ Legend Links ------------------ */
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.legend a {
+    color: var(--primary-navy);
+}
+
+/* ------------------ Hero Section ------------------ */
+.hero-bar {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 400px;
+    overflow: hidden;
+    background-color: var(--primary-navy);
+}
+
+.hero-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: linear-gradient(to right, rgba(31, 58, 95, 0.85), rgba(31, 58, 95, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    z-index: 2;
+    color: white;
+}
+
+.hero-overlay .hero-text h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+.hero-overlay .hero-text p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Hero overlay button */
+.hero-overlay .hero-text button {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* ------------------ Hero Image ------------------ */
+.hero-image {
+    flex: 1;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------ Three Feature Boxes ------------------ */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: var(--bg-lightgray);
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ------------------ Why Join Section ------------------ */
+.why-join {
+    margin: 60px 0;
+}
+
+.why-join h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-navy);
+}
+
+.why-join ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 2; /* double spacing for bullets */
+}
+
+/* ------------------ Founder / About Section ------------------ */
+.founder-section {
+    margin-top: 60px;
+    padding: 30px;
+}
+
+.founder-section p {
+    line-height: 2; /* double spacing */
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+/* ------------------ Apply Button Styling ------------------ */
+.apply-button {
+    display: inline-block;
+    background-color: var(--accent-orange);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.apply-button:hover {
+    background-color: #e08b3f; /* slightly darker orange on hover */
+}
+
+/* ------------------ Apply Page Styling ------------------ */
+.apply-page {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.apply-page h1 {
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+}
+
+.apply-page p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.apply-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* ------------------ Topics Section ------------------ */
+.topics-section {
+    margin: 60px 0;
+}
+
+.topics-section h2 {
+    color: var(--primary-navy);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.topics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topic-box {
+    background-color: var(--bg-lightgray);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 220px;
+    max-width: 180px;
+}
+
+.topic-box img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.topic-box p {
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Remove hover effect */
+.topic-box:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* ------------------ Program Structure Page ------------------ */
+
+.page-hero {
+    background-color: var(--primary-navy);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+}
+
+.page-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.program-structure {
+    margin: 60px auto;
+}
+
+.program-section {
+    margin-bottom: 60px;
+}
+
+.program-section h2 {
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+}
+
+.program-section p {
+    line-height: 1.8;
+    max-width: 900px;
+}
+
+.program-section ul {
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.alt-bg {
+    background-color: var(--bg-lightgray);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 10px;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    border-left: 4px solid var(--accent-orange);
+    padding-left: 20px;
+}
+
+.timeline-item h3 {
+    margin: 0 0 8px 0;
+    color: var(--primary-navy);
+}
+
+/* CTA */
+.program-cta {
+    text-align: center;
+    margin: 80px 0;
+}
