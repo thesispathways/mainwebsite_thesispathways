@@ -387,53 +387,107 @@ footer {
     }
 }
 
-/* ------------------ Mobile Navigation ------------------ */
+/* ------------------ Mobile Navigation & Layout Fixes ------------------ */
 @media (max-width: 768px) {
+
+    /* Header / Navigation */
     header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 15px 20px;
     }
+
     .nav-links {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     .nav-links a {
-        margin: 5px 0;
+        margin: 8px 0;
         font-size: 1rem;
+        width: 100%;           /* make links full width */
+        text-align: center;    /* center text */
     }
+
+    /* Features stacked */
     .features {
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
-    .why-join ul, .topics-grid {
+
+    .feature-box {
+        width: 100%;           /* full width boxes */
+        padding: 20px;
+    }
+
+    /* Why Join Section */
+    .why-join ul {
         padding-left: 10px;
         justify-content: center;
     }
+
+    /* Topics Section */
+    .topics-grid {
+        flex-direction: column; /* stack topic boxes */
+        gap: 15px;
+    }
+
     .topic-box {
         max-width: 100%;
         flex: 1 1 100%;
         padding: 15px;
     }
+
     .topics-section h2 {
         font-size: 1.8rem;
     }
+
+    /* Program Structure / Timeline */
     .program-section {
         padding: 20px;
     }
+
     .timeline-item {
         padding-left: 15px;
     }
+
     .timeline-item h3 {
         font-size: 1.2rem;
     }
+
+    /* Footer */
     footer {
         font-size: 0.8rem;
         padding: 15px 10px;
     }
+
+    /* Apply Button */
     .apply-button {
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero-bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-overlay {
+        width: 100%;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-overlay .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        height: 300px;
+        object-fit: cover;
     }
 }
