@@ -96,7 +96,7 @@ header {
     position: relative;
     display: flex;
     align-items: stretch;
-    height: 400px;        /* base height */
+    height: 600px;        /* base height */
     max-height: 60vh;     /* prevent hero from being too tall on large screens */
     overflow: hidden;
     background-color: var(--primary-navy);
