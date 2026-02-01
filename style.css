@@ -96,7 +96,8 @@ header {
     position: relative;
     display: flex;
     align-items: stretch;
-    height: 400px;
+    height: 400px;        /* base height */
+    max-height: 60vh;     /* prevent hero from being too tall on large screens */
     overflow: hidden;
     background-color: var(--primary-navy);
 }
@@ -149,6 +150,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center; /* keep image centered */
 }
 
 /* ------------------ Three Feature Boxes ------------------ */
@@ -195,7 +197,7 @@ header {
     margin: 0 auto;
     list-style-type: disc;
     padding-left: 20px;
-    line-height: 2; /* double spacing for bullets */
+    line-height: 2;
 }
 
 /* ------------------ Founder / About Section ------------------ */
@@ -205,7 +207,7 @@ header {
 }
 
 .founder-section p {
-    line-height: 2; /* double spacing */
+    line-height: 2;
 }
 
 /* ------------------ Footer ------------------ */
@@ -232,7 +234,7 @@ footer {
 }
 
 .apply-button:hover {
-    background-color: #e08b3f; /* slightly darker orange on hover */
+    background-color: #e08b3f;
 }
 
 /* ------------------ Apply Page Styling ------------------ */
@@ -302,7 +304,6 @@ footer {
     margin: 0;
 }
 
-/* Remove hover effect */
 .topic-box:hover {
     transform: none;
     box-shadow: none;
@@ -383,4 +384,16 @@ footer {
 .program-cta {
     text-align: center;
     margin: 80px 0;
+}
+
+/* ------------------ Responsive Hero ------------------ */
+@media (max-width: 768px) {
+    .hero-bar {
+        height: 50vh; /* shorter on mobile */
+    }
+    .hero-overlay {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
 }
