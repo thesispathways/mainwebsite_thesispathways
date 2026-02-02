@@ -202,16 +202,6 @@ header {
     line-height: 2;
 }
 
-/* ------------------ Founder / About Section ------------------ */
-.founder-section {
-    margin-top: 60px;
-    padding: 30px;
-}
-
-.founder-section p {
-    line-height: 2;
-}
-
 /* ------------------ Footer ------------------ */
 footer {
     text-align: center;
@@ -373,7 +363,7 @@ footer {
     .hero-overlay {
         width: 100%;
         padding: 30px 20px;
-        text-align: left; /* keep hero text left */
+        text-align: left;
     }
     .hero-overlay .hero-text h1 {
         font-size: 2rem;
@@ -390,24 +380,33 @@ footer {
 /* ------------------ Mobile Fixes ------------------ */
 @media (max-width: 768px) {
 
-    /* Header / Navigation - keep links on same line */
+    /* Header - stack logo and nav vertically */
     header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
         padding: 15px 20px;
     }
 
+    /* Navigation links stacked vertically */
     .nav-links {
         display: flex;
-        flex-direction: row;
-        gap: 15px;
-        margin: 0;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
     }
 
     .nav-links a {
-        margin: 0;
         font-size: 1rem;
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Logo */
+    .logo h1 {
+        font-size: 2rem;
+        width: 100%;
         text-align: left;
     }
 
@@ -429,15 +428,17 @@ footer {
         justify-content: center;
     }
 
-    /* Topics Section */
+    /* Topics Section - 2 per row */
     .topics-grid {
-        flex-direction: column;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
     }
 
     .topic-box {
-        max-width: 100%;
-        flex: 1 1 100%;
+        flex: 0 1 calc(50% - 15px) !important;
+        max-width: calc(50% - 15px) !important;
         padding: 15px;
     }
 
@@ -470,7 +471,7 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* Hero Section - keep text left */
+    /* Hero Section */
     .hero-bar {
         flex-direction: column;
         height: auto;
