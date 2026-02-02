@@ -224,12 +224,13 @@ footer {
     font-size: 1rem;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     margin-top: 10px;
     text-align: center;
 }
 
 .apply-button:hover {
+    transform: translateY(-2px);
     background-color: #e08b3f;
 }
 
@@ -358,6 +359,34 @@ footer {
     margin: 80px 0;
 }
 
+/* ------------------ Apply Page ------------------ */
+.apply-page {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.apply-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.apply-buttons .apply-button {
+    min-width: 220px;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.apply-buttons .apply-button:hover {
+    transform: translateY(-2px);
+    background-color: #e08b3f;
+}
+
 /* ------------------ Responsive Hero ------------------ */
 @media (max-width: 1024px) {
     .hero-bar {
@@ -392,7 +421,6 @@ footer {
         padding: 15px 20px;
     }
 
-    /* Navigation links stacked vertically */
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -407,7 +435,6 @@ footer {
         margin-left: 0;
     }
 
-    /* Logo */
     .logo h1 {
         font-size: 2rem;
         width: 100%;
@@ -427,7 +454,6 @@ footer {
         padding: 20px;
     }
 
-    /* Why Join Section */
     .why-join ul {
         padding-left: 10px;
         justify-content: center;
@@ -464,19 +490,16 @@ footer {
         font-size: 1.2rem;
     }
 
-    /* Footer */
     footer {
         font-size: 0.8rem;
         padding: 15px 10px;
     }
 
-    /* Apply Button */
     .apply-button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 14px 28px;
+        font-size: 1.1rem;
     }
 
-    /* Hero Section */
     .hero-bar {
         flex-direction: column;
         height: auto;
@@ -505,8 +528,22 @@ footer {
     }
 }
 
+/* Mobile Extra Small */
 @media (max-width: 480px) {
     .container {
         padding: 0 10px;
+    }
+
+    /* Stack Apply buttons vertically on very small screens */
+    .apply-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .apply-buttons .apply-button {
+        width: 80%;
+        padding: 18px 0;
+        font-size: 1.3rem;
     }
 }
