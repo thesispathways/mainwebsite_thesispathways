@@ -10,6 +10,10 @@
 }
 
 /* ------------------ Global Styles ------------------ */
+* {
+    box-sizing: border-box; /* include padding/border in width */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -419,6 +423,7 @@ footer {
 
     .feature-box {
         width: 100%;
+        max-width: 100%;
         padding: 20px;
     }
 
