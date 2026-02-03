@@ -198,6 +198,15 @@ header {
     color: var(--primary-navy);
 }
 
+.why-join p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    text-align: center;
+}
+
 .why-join ul {
     max-width: 800px;
     margin: 0 auto;
@@ -546,4 +555,119 @@ footer {
         padding: 18px 0;
         font-size: 1.3rem;
     }
+}
+
+.contact-us {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.contact-us h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+.contact-us a {
+    color: #1a73e8; /* match your link style */
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------ Founder Section ------------------ */
+.founder-section {
+    background-color: #eef2f6; /* light gray background */
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 40px 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.founder-section h2 {
+    text-align: center;
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.founder-section p {
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.founder-section .founder-quote {
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary-teal);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* ------------------ FAQ Section ------------------ */
+.faq-search {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.faq-category {
+    margin-bottom: 40px;
+}
+
+.faq-category h2 {
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: var(--bg-lightgray);
+    color: var(--primary-navy);
+    border-left: 4px solid var(--secondary-teal); /* teal border */
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #d8e6eb; /* subtle hover effect that matches theme */
+}
+
+
+.faq-answer {
+    display: none; /* hidden by default */
+    padding: 10px 20px;
+    background-color: var(--bg-lightgray);
+    border-radius: 8px;
+    margin-top: 5px;
+    line-height: 1.6;
 }
