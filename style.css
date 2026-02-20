@@ -750,3 +750,26 @@ ul, ol {
     transition: transform 0.2s;
 }
 
+.next-cohort {
+    text-align: center;
+    margin: 60px 0;
+    color: var(--text-dark);
+}
+
+.next-cohort h2 {
+    font-size: 2rem;
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+}
+
+.next-cohort p {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.next-cohort a.apply-button {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+}
