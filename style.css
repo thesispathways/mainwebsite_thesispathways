@@ -780,8 +780,9 @@ ul, ol {
     padding: 40px;
     border-radius: 12px;
     text-align: center;
-    margin: 40px 0;
+    margin: 20px auto;
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    max-width: 1100px;
 }
 
 .consultation-highlight h2 {
