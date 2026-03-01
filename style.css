@@ -773,3 +773,26 @@ ul, ol {
     padding: 14px 28px;
     font-size: 1.1rem;
 }
+
+.consultation-highlight {
+    background-color: white;
+    border: 3px solid var(--accent-orange);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px 0;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.consultation-highlight h2 {
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.consultation-highlight p {
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
