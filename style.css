@@ -752,7 +752,7 @@ ul, ol {
 
 .next-cohort {
     text-align: center;
-    margin: 60px 0;
+    margin: 10px 0;
     color: var(--text-dark);
 }
 
@@ -767,11 +767,6 @@ ul, ol {
     margin: 0 auto 20px auto;
     line-height: 1.5;
     font-size: 1rem;
-}
-
-.next-cohort a.apply-button {
-    padding: 14px 28px;
-    font-size: 1.1rem;
 }
 
 .consultation-highlight {
