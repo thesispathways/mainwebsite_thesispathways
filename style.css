@@ -711,6 +711,13 @@ footer {
     margin: 10px 0;
 }
 
+.pricing-card .session-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8F4212;
+    margin: 10px 0;
+}
+
 .pricing-note {
     background-color: #fff3e0;
     border-left: 4px solid var(--accent-orange);
@@ -857,4 +864,3 @@ ul, ol {
     font-size: 0.95rem;
     color: #666;
 }
-
