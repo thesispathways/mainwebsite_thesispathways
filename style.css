@@ -862,3 +862,16 @@ ul, ol {
     font-size: 0.95rem;
     color: #666;
 }
+
+.pricing-promo {
+    background: linear-gradient(135deg, #fff7ed, #ffffff);
+    border: 2px solid var(--accent-orange);
+    padding: 14px 16px;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    animation: subtlePulse 2.5s infinite;
+}
