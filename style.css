@@ -687,6 +687,10 @@ footer {
     text-align: center;
 }
 
+.pricing-box h3, .pricing-box p {
+    text-align: center;
+}
+
 .pricing-card {
     background-color: white;
     border: 2px solid var(--secondary-teal);
