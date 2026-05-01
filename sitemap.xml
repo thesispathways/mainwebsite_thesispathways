@@ -33,7 +33,7 @@
 
     <url>
         <loc>https://thesispathways.org/our-mentors.html</loc>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
 
     <url>
@@ -59,6 +59,11 @@
     <url>
         <loc>https://thesispathways.org/blog-posts/parental-mediation-smartphone-social-media.html</loc>
         <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://thesispathways.org/mentors.html</loc>
+        <priority>0.1</priority>
     </url>
 
 </urlset>
