@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mentors | ThesisPathways</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-95NB0NH3L6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-95NB0NH3L6');
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+            <a href="index.html"><h1><span class="logo-initial">T</span>HESIS<span class="logo-initial">P</span>ATHWAYS</h1></a>
+            </div>
+
+            <nav class="nav-links">
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropbtn">Who We Are</label>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="our-mentors.html">Our Mentors</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                </div>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScsi7sAU_0vRTSF3rZod6Pryh1Exa15ycBZDhmTvHJ_CzICRQ/viewform?usp=dialog">Mentor Application</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSef1nXYjrVRkJ12ZviytwmImn3D4AmuJkdoyNIv9DLRwtV80w/viewform?usp=dialog">Student Application</a>
+            </nav>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="legend">
+            <a href="program_structure.html">Program Structure</a>
+            <a href="research-topics.html">Research Topics</a>
+            <a href="pricing_scholarships.html">Pricing & Scholarships</a>
+            <a href="FAQ.html">FAQs</a>
+        </div>
+    </div>
+
+    <div class="page-hero">
+        <h1>Our Mentors</h1>
+    </div>
+
+    <!-- GRID -->
+    <div class="mentors-grid" id="mentorsGrid"></div>
+
+    <!-- MODAL -->
+    <div id="mentorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img id="modal-img">
+            <h2 id="modal-name"></h2>
+
+            <p><strong>University Affiliation:</strong> <span id="modal-university"></span></p>
+            <p><strong>Areas of Expertise:</strong> <span id="modal-expertise"></span></p>
+
+            <p id="modal-bio"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 style="text-align: center;">
+            We’re currently in the process of onboarding more mentors to support more topics and our growing cohort of students
+        </h3>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to learn more?</p>
+        <p>Reach out to us at:</p>
+        <p><strong>thesispathways@gmail.com</strong></p>
+    </div>
+
+    <div class="divider"></div>
+    <footer>
+        &copy; 2026 ThesisPathways LLC
+    </footer>
+
+
+<script>
+const mentors = [
+    {
+        name: "Alisha C.",
+        img: "mentor-profiles/alisha-chan.jpg",
+        universityAffiliation: "Yale University",
+        areasOfExpertise: "Environmental epidemiology, environmental science, public health, environmental justice, public health equity, socioeconomics",
+        bio: "Alisha is a Yale graduate with a PhD in Chemical and Environmental Engineering, specializing in environmental epidemiology. She has extensive experience as both a scientist and research mentor, having published widely and guided numerous students and early researchers through the publication process. Her work focuses on understanding the relationship between environmental exposures and human health. She is passionate about mentorship and is committed to inspiring the next generation of scientists to pursue rigorous, impactful research."
+    },
+    {
+        name: "Emma L.",
+        img: "mentor-profiles/emma-longmire.jpg",
+        universityAffiliation: "U.C. San Diego School of Medicine",
+        areasOfExpertise: "Public health, global health, child & adult psychiatry, eating disorders, pediatrics, health equity, health education, genomics, AI-collaborative research, family medicine, primary care, and cancer research",
+        bio: "As a first-generation Mexican-American MD/MPH candidate at UC San Diego and the Harvard T.H. Chan School of Public Health, I am dedicated to bridging the gap between rigorous clinical medicine and community-based health equity. My clinical approach is rooted in exceptional empathy, a compassionate bedside manner, and providing trauma-informed care, particularly for disadvantaged youth and vulnerable populations. In the clinical setting, I excel at building trust with patients and combining proactive, self-sufficient medical management with deeply humanistic, interdisciplinary teamwork.Beyond direct patient care, my commitment to advocacy, global health, and education drives my professional pursuits. I currently serve as Co-Director for the Program for Underrepresented Medical Applicants (PUMA), a Clinical Venture Fellow at Cleo Capital and founder of the mental health branch of SkinReach, a nonprofit organization. Additionally, I am a dedicated mentor and teacher for high school, undergraduate, and medical students. By synthesizing complex clinical data with collaborative systems design, I aim to advocate for marginalized communities and implement systemic, impactful changes across the healthcare landscape."
+    },
+    {
+        name: "Sara M.",
+        img: "mentor-profiles/sara-mahdavi.jpg",
+        universityAffiliation: "California Institute of Technology",
+        areasOfExpertise: "Theoretical Biophysics, Statistical Mechanics, Fluid Mechanics",
+        bio: "I believe that teaching and research go hand in hand, and I enjoy helping students develop intuition for quantitative problems and build confidence in math and science. Physics is a powerful tool, and I like applying it to explore the complexity and beauty of living systems. Outside of work, I enjoy spending time outdoors."
+    },
+    {
+        name: "Isabel G.",
+        img: "mentor-profiles/isabel-gandarilla.jpeg",
+        universityAffiliation: "U.C. San Diego School of Medicine",
+        areasOfExpertise: "Psychiatry, Mental Health, Public Health, Holistic and Lifestyle medicine",
+        bio: "Isabel grew up in San Diego, California, and received her Bachelor of Science at UCLA. Prior to medical school, Isabel became a certified yoga instructor and continues to teach at local studios. In medical school, Isabel completed a Master in Public Health, through which she conducted research into the impacts of anticholinergic medication and its association to smoking behavior in patients with serious mental illness. She also worked as a public health intern with the Centers for Disease Control and Prevention, focusing on immigrant mental health. Isabel has served as psychiatry clinic manager for the student-run free clinic and a mentor for the Program for Underrepresented Medical Applicants. She speaks Spanish and enjoys cooking traditional Mexican and Puerto Rican meals with her family."
+    },
+    {
+        name: "Raad A.",
+        img: "mentor-profiles/raad-altawell.png",
+        universityAffiliation: "Yale University",
+        areasOfExpertise: "Translational regulation, Non-canonical translation, tRNA biology, Gene expression, Drosophila genetics, Ribosome profiling, Neurogenetics, Molecular biology",
+        bio: "I was born and raised in southern Syria and moved to the United States in 2016. I completed my B.A. in Molecular Biology and Biochemistry at Rutgers University, where I joined Dr. Mi-Hyeon Jang's laboratory and studied the effects of chemotherapeutic agents on hippocampal neurogenesis in mice. After graduation, I worked as a full-time researcher in Dr. Nicholas Stavropoulos's laboratory at the Waksman Institute, investigating the molecular pathways and neural circuits that regulate sleep in Drosophila. I am currently a PhD candidate in the Department of Genetics at Yale University, working in Dr. Lynn Cooley's laboratory. My dissertation research focuses on stop codon readthrough (SCR) in the Drosophila nervous system, with particular emphasis on how tRNA modifications and tRNA abundance drive this non-canonical mode of translation. Outside the lab, I enjoy hiking, playing classical guitar, and cooking traditional Syrian dishes."
+    },
+    {
+        name: "Rawan (Won) A.",
+        img: "mentor-profiles/rawan-algahtani.jpg",
+        universityAffiliation: "University of Minnesota",
+        areasOfExpertise: "Business, Entrepunership, Workforce Development, Organizational Behavior, Finance, Management, Non-profit, Global Economy, Leadership, Women Empowerment, Human Resources Development",
+        bio: "Rawan is a highly motivated and skilled Global Citizen, with a strong passion for solving problems and entrepreneurship. Throughout her career, she has gained valuable experience in startups, businesses, and global affairs, where she has excelled in creating positive impact. She believes in the power of collaboration and is always eager to connect with like-minded individuals achieve goals."
+    }
+];
+
+const grid = document.getElementById("mentorsGrid");
+
+mentors.forEach((mentor, index) => {
+    const card = document.createElement("div");
+    card.className = "mentor-card";
+
+    card.innerHTML = `
+        <img src="${mentor.img}">
+        <h3>${mentor.name}</h3>
+    `;
+
+    card.onclick = () => openModal(index);
+    grid.appendChild(card);
+});
+
+function openModal(index) {
+    const mentor = mentors[index];
+
+    document.getElementById("modal-img").src = mentor.img;
+    document.getElementById("modal-name").innerText = mentor.name;
+
+    document.getElementById("modal-university").innerText = mentor.universityAffiliation;
+    document.getElementById("modal-expertise").innerText = mentor.areasOfExpertise;
+
+    document.getElementById("modal-bio").innerText = mentor.bio;
+
+    document.getElementById("mentorModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("mentorModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("mentorModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+</script>
+
+</body>
+</html>

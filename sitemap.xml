@@ -32,8 +32,33 @@
     </url>
 
     <url>
-        <loc>https://thesispathways.org/FAQ.html</loc>
+        <loc>https://thesispathways.org/our-mentors.html</loc>
         <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesispathways.org/FAQ.html</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://thesispathways.org/blog.html</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://thesispathways.org/blog-posts/online-learning-high-school-46-study-review.html</loc>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://thesispathways.org/blog-posts/structured-mentorship-underrepresented-stem.html</loc>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://thesispathways.org/blog-posts/parental-mediation-smartphone-social-media.html</loc>
+        <priority>0.4</priority>
     </url>
 
 </urlset>
