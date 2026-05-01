@@ -61,9 +61,4 @@
         <priority>0.4</priority>
     </url>
 
-    <url>
-        <loc>https://thesispathways.org/mentors.html</loc>
-        <priority>0.1</priority>
-    </url>
-
 </urlset>
