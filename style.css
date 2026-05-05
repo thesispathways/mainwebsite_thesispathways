@@ -996,6 +996,10 @@ ul, ol {
     .blog-columns {
         flex-direction: column;
     }
+    .blog-post {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
 }
 
 
