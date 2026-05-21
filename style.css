@@ -1192,3 +1192,23 @@ ul, ol {
     font-size: 24px;
     cursor: pointer;
 }
+
+.flyer-ad {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.flyer-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.flyer-image:hover {
+    transform: scale(1.01);
+}
