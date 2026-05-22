@@ -61,4 +61,9 @@
         <priority>0.4</priority>
     </url>
 
+    <url>
+        <loc>https://thesispathways.org/blog-posts/couch-potatoes-vs-elite-athletes.html</loc>
+        <priority>0.4</priority>
+    </url>
+
 </urlset>
